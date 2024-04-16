@@ -14,7 +14,7 @@ public:
         for (int i = 0; i < stones.size(); i++)
             totalweight += stones[i];
         int target = totalweight / 2;
-        vector<int> dp(15001, 0);
+        vector<int> dp(1501, 0);
         for (int i = 0; i < stones.size(); i++)
         {
             for (int j = target; j >= stones[i]; j--)
